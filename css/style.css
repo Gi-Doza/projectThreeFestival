@@ -75,3 +75,10 @@ header {
     color: #8ebf24;
     transform: translateY(-4px);
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+}
