@@ -1,4 +1,6 @@
-# Open Doors Festival Website
+# Project 3: Open Doors Festival
+
+**By: Gian Mendoza**
 
 ## Project Statement
 
