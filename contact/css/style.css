@@ -158,6 +158,23 @@ header {
     transform: translateY(-4px);
 }
 
+.buyTicketButton {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    background: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
+.buyTicketButton:hover {
+    background: #1661C5;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+
+
 /* ---------- Main Content Starts Here ---------- */
 .heroSection {
     display: flex;
@@ -169,6 +186,14 @@ header {
     align-self: stretch;
     background: linear-gradient(0deg, rgba(191, 150, 99, 0.25) 0%, rgba(191, 150, 99, 0.25) 100%), url(/contact/img/patternBG.png) lightgray 50% / cover no-repeat;
     background-blend-mode: color, overlay;
+}
+
+.getTicketSection {
+    display: flex;
+    padding: 32px 15.42% 64px 15.42%;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
 }
 
 .contactSection {
@@ -214,6 +239,11 @@ header {
     background: var(--Foundation-Blue-blue-500, #186BD9);
 }
 
+.sendButton:hover {
+    background: #1661C5;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
 .textFields {
     height: 32px;
     align-self: stretch;
@@ -244,6 +274,13 @@ header {
 .contactRight a {
     color: #3B3B3B;
     text-decoration: none;
+    text-underline-offset: 6px;
+    transition: text-decoration 0.2s ease-in-out, text-underline-offset 0.2s ease-in-out;
+}
+
+.contactRight a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .infoWrapper {
@@ -272,6 +309,13 @@ footer p, footer p.overline, footer a {
     font-family: "Nunito Sans", sans-serif;
     color: #FAFAFA;
     text-decoration: none;
+    text-underline-offset: 6px;
+    transition: text-decoration 0.2s ease-in-out, text-underline-offset 0.2s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .logoCopyrightWrapper {

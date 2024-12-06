@@ -43,6 +43,80 @@ p.overline {
     letter-spacing: 0.27px;
 }
 
+caption {
+    color: var(--Foundation-Black-black-500, #3B3B3B);
+
+    /* caption */
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 15px */
+    letter-spacing: 0.36px;
+}
+
+h1 {
+    color: var(--Foundation-Blue-blue-500, #186BD9);
+
+    /* h1 - Title */
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 100px */
+    letter-spacing: 1.6px;
+}
+
+h2 {
+    color: var(--Foundation-Black-black-500, #0A0A0A);
+    text-align: center;
+
+    /* h2 - section */
+    font-family: "Bebas Neue";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 76.25px */
+    letter-spacing: 1.22px;
+}
+
+h4 {
+    color: var(--Foundation-Black-black-500, #0A0A0A);
+
+    /* h4 - heading */
+    font-family: "Bebas Neue";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 45px */
+    letter-spacing: 0.72px;
+}
+
+h6 {
+    color: var(--Foundation-Black-black-500, #0A0A0A);
+
+    /* h6 - categories */
+    font-family: "Bebas Neue";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 26.25px */
+    letter-spacing: 0.42px;
+}
+
+p.primaryButton {
+    color: var(--Foundation-White-white-500, #FAFAFA);
+    text-align: center;
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 1000
 
@@ -109,6 +183,136 @@ header {
     transform: translateY(-4px);
 }
 
+.buyTicketButton {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    background: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
+.buyTicketButton:hover {
+    background: #1661C5;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* ---------- Main Content Starts Here ---------- */
+.heroSection {
+    display: flex;
+    height: 273px;
+    padding: 88px 8.33% 51px 8.33%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    background: linear-gradient(0deg, rgba(191, 150, 99, 0.25) 0%, rgba(191, 150, 99, 0.25) 100%), url(/contact/img/patternBG.png) lightgray 50% / cover no-repeat;
+    background-blend-mode: color, overlay;
+}
+
+.getTicketSection {
+    display: flex;
+    padding: 32px auto 64px auto;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.getTicketSection img {
+    width: 70%;
+    max-width: 900px;
+    transform: rotate(4.8deg);
+}
+
+.getTicketInfoWrapper {
+    display: flex;
+    width: 26.67%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.buyNowButton {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    background: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
+.buyNowButton:hover {
+    background: #1661C5;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.merchSection {
+    display: flex;
+    padding: 32px 8.33% 64px 8.33%;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.merchCardWrapper {
+    display: flex;
+    width: 83.33%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 32px 24px;
+    flex-wrap: wrap;
+}
+
+.merchCard {
+    display: flex;
+    width: 26.67%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.merchCard img {
+    width: 100%;
+    height: 256px;
+    display: block;
+    align-self: stretch;
+    border: 4px solid var(--Foundation-Green-green-500, #8EBF24);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+    object-fit: cover;
+}
+
+.itemInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.addToCartButton {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    border: 2px solid var(--Foundation-Black-black-500, #0A0A0A);
+    color: var(--Foundation-Black-black-500, #0A0A0A);
+    text-align: right;
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
 
 
 
@@ -117,6 +321,7 @@ header {
 footer {
     display: flex;
     flex-wrap: wrap;
+    margin-top: auto;
     width: 100%;
     height: 200px;
     padding: 32px 8.33%;
@@ -131,6 +336,13 @@ footer p, footer p.overline, footer a {
     font-family: "Nunito Sans", sans-serif;
     color: #FAFAFA;
     text-decoration: none;
+    text-underline-offset: 6px;
+    transition: text-decoration 0.2s ease-in-out, text-underline-offset 0.2s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .logoCopyrightWrapper {
