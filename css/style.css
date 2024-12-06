@@ -19,6 +19,30 @@ body {
     align-items: center;
 }
 
+p {
+    color: var(--Foundation-White-white-500, #0A0A0A);
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
+p.overline {
+    color: var(--Foundation-White-white-500, #0A0A0A);
+
+    /* overline */
+    font-family: "Nunito Sans";
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 11.25px */
+    letter-spacing: 0.27px;
+}
+
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 1000
 
@@ -38,10 +62,11 @@ body {
   font-style: normal;
 } */
 
+/* ---------- Header Starts Here! ---------- */
 header {
     display: flex;
     width: 100%;
-    padding: 16px 120px;
+    padding: 16px 8.33%;
     justify-content: space-between;
     align-items: center;
     background: var(--Foundation-White-white-500, #FAFAFA);
@@ -53,6 +78,14 @@ header {
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
+}
+
+#navCurrent {
+    color: #186bd9;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #8ebf24;
 }
 
 .menuWrapper a {
@@ -79,6 +112,81 @@ header {
 
 
 
+
+/* ---------- Footer Starts Here ---------- */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    padding: 32px 8.33%;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "Nunito Sans", sans-serif;
+    color: #FAFAFA; 
+    background: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
+footer p, footer p.overline, footer a {
+    font-family: "Nunito Sans", sans-serif;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+.logoCopyrightWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.logoCopyrightWrapper img {
+    height: 90px;
+}
+
+.footerLinks {
+    display: flex;
+    padding-left: 12px;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    border-left: 2px solid var(--Foundation-Green-green-500, #8EBF24);
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.eventTextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.footerEventInfoWrapper{
+    display: flex;
+    max-width: 13.13%;
+    padding-left: 12px;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    border-left: 2px solid var(--Foundation-Green-green-500, #8EBF24);
+}
+
+.footerInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ---------- Resposive Design Starts Here ---------- */
 @media screen and (max-width: 600px) {
     
 }
