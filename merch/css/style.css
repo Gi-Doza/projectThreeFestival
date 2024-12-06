@@ -207,7 +207,7 @@ header {
     align-items: flex-start;
     gap: 24px;
     align-self: stretch;
-    background: linear-gradient(0deg, rgba(191, 150, 99, 0.25) 0%, rgba(191, 150, 99, 0.25) 100%), url(/contact/img/patternBG.png) lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(191, 150, 99, 0.25) 0%, rgba(191, 150, 99, 0.25) 100%), url(contact/img/patternBG.png) lightgray 50% / cover no-repeat;
     background-blend-mode: color, overlay;
 }
 
