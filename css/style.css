@@ -198,7 +198,8 @@ header {
     align-items: flex-start;
     gap: 24px;
     align-self: stretch;
-    background: linear-gradient(0deg, rgba(191, 150, 99, 0.40) 0%, rgba(191, 150, 99, 0.40) 100%), url(../img/homeHeroBanner.jpeg) lightgray 0px -175.49px / 100% 200.024% no-repeat;background-blend-mode: color, normal;
+    background: linear-gradient(0deg, rgba(191, 150, 99, 0.40) 0%, rgba(191, 150, 99, 0.40) 100%), url(../img/homeHeroBanner.jpeg) lightgray 50% / cover no-repeat;
+    background-blend-mode: color, normal;
 }
 
 .heroSection h1, p {
