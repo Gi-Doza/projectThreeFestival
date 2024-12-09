@@ -20,7 +20,7 @@ body {
 }
 
 p {
-    color: var(--Foundation-White-white-500, #0A0A0A);
+    color: var(--Foundation-White-white-500, #3B3B3B);
 
     /* paragraph */
     font-family: "Nunito Sans";
@@ -32,7 +32,7 @@ p {
 }
 
 p.overline {
-    color: var(--Foundation-White-white-500, #0A0A0A);
+    color: var(--Foundation-White-white-500, #3B3B3B);
 
     /* overline */
     font-family: "Nunito Sans";
@@ -41,6 +41,105 @@ p.overline {
     font-weight: 700;
     line-height: 125%; /* 11.25px */
     letter-spacing: 0.27px;
+}
+
+caption {
+    color: var(--Foundation-Black-black-500, #3B3B3B);
+
+    /* caption */
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 15px */
+    letter-spacing: 0.36px;
+}
+
+h1 {
+    color: var(--Foundation-Blue-blue-500, #186BD9);
+
+    /* h1 - Title */
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 100px */
+    letter-spacing: 1.6px;
+}
+
+h2 {
+    color: var(--Foundation-White-white-500, #FAFAFA);
+    text-align: right;
+
+    /* h2 - section */
+    font-family: "Bebas Neue";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 76.25px */
+    letter-spacing: 1.22px;
+}
+
+h3 {
+    color: var(--Foundation-White-white-500, #FAFAFA);
+    text-align: right;
+
+    /* h3 - subtitle */
+    font-family: "Bebas Neue";
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 58.75px */
+    letter-spacing: 0.94px;
+}
+
+h4 {
+    color: var(--Foundation-Blue-blue-50, #E8F0FB);
+
+    /* h4 - heading */
+    font-family: "Bebas Neue";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 45px */
+    letter-spacing: 0.72px;
+}
+
+h5 {
+    color: var(--Foundation-Blue-blue-50, #E8F0FB);
+
+    /* h5 - subheading */
+    font-family: "Bebas Neue";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 33.75px */
+    letter-spacing: 0.54px;
+}
+
+h6 {
+    color: var(--Foundation-Black-black-500, #0A0A0A);
+
+    /* h6 - categories */
+    font-family: "Bebas Neue";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 26.25px */
+    letter-spacing: 0.42px;
+}
+
+p.primaryButton {
+    color: var(--Foundation-White-white-500, #FAFAFA);
+    text-align: center;
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
 }
 
 /* // <uniquifier>: Use a unique and descriptive class name
@@ -109,6 +208,121 @@ header {
     transform: translateY(-4px);
 }
 
+.buyTicketButton {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    background: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
+.buyTicketButton:hover {
+    background: #1661C5;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+
+
+
+/* ---------- Main Content Starts Here ---------- */
+.heroSection {
+    display: flex;
+    height: 480px;
+    padding: 88px 8.33% 51px 8.33%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    background: linear-gradient(0deg, rgba(191, 150, 99, 0.40) 0%, rgba(191, 150, 99, 0.40) 100%), url(../img/eventScheduleHero.jpeg) lightgray 50% / cover no-repeat;
+    background-blend-mode: color, normal;
+}
+
+.scheduleSectionDay1 {
+    display: flex;
+    padding: 64px 10.97%;
+    align-items: flex-start;
+    gap: 8.75%;
+    align-self: stretch;
+    background: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
+.scheduleSectionDay2 {
+    display: flex;
+    padding: 64px 10.97%;
+    align-items: flex-start;
+    gap: 8.75%;
+    align-self: stretch;
+    background: var(--Foundation-Blue-blue-500, #8EBF24);
+}
+
+.scheduleSectionDay3 {
+    display: flex;
+    padding: 64px 10.97%;
+    align-items: flex-start;
+    gap: 8.75%;
+    align-self: stretch;
+    background: var(--Foundation-Blue-blue-500, #BF9663);
+}
+
+.scheduleLeftContainer {
+    display: flex;
+    width: 16.94%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.scheduleLeftContainer p {
+    color: var(--Foundation-White-white-500, #FAFAFA);
+    text-align: right;
+    font-family: "Bebas Neue";
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 112.5px */
+    letter-spacing: 1.8px;
+}
+
+.scheduleRightContainer {
+    display: flex;
+    width: 45.97%;
+    padding-left: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+    border-left: 4px solid var(--Foundation-Blue-blue-50, #E8F0FB);
+}
+
+.titleInforWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.titleInforWrapper p {
+    align-self: stretch;color: var(--Foundation-White-white-500, #FAFAFA);
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
+.timeTitleWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
 
 
 
@@ -131,6 +345,13 @@ footer p, footer p.overline, footer a {
     font-family: "Nunito Sans", sans-serif;
     color: #FAFAFA;
     text-decoration: none;
+    text-underline-offset: 6px;
+    transition: text-decoration 0.2s ease-in-out, text-underline-offset 0.2s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .logoCopyrightWrapper {
