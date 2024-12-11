@@ -24,7 +24,7 @@ p {
 
     /* paragraph */
     font-family: "Nunito Sans";
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 125%; /* 20px */
@@ -36,7 +36,7 @@ p.overline {
 
     /* overline */
     font-family: "Nunito Sans";
-    font-size: 9px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 700;
     line-height: 125%; /* 11.25px */
@@ -48,7 +48,7 @@ caption {
 
     /* caption */
     font-family: "Nunito Sans";
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 125%; /* 15px */
@@ -92,6 +92,19 @@ h3 {
     letter-spacing: 0.94px;
 }
 
+h4 {
+    color: var(--Foundation-White-white-500, #FAFAFA);
+    text-align: center;
+
+    /* h4 - heading */
+    font-family: "Bebas Neue";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 45px */
+    letter-spacing: 0.72px;
+}
+
 h5 {
     color: var(--Foundation-Blue-blue-500, #186BD9);
 
@@ -122,7 +135,7 @@ p.primaryButton {
 
     /* paragraph */
     font-family: "Nunito Sans";
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 125%; /* 20px */
@@ -148,6 +161,10 @@ p.primaryButton {
   font-style: normal;
 } */
 
+
+
+
+
 /* ---------- Header Starts Here! ---------- */
 header {
     display: flex;
@@ -157,6 +174,11 @@ header {
     align-items: center;
     background: var(--Foundation-White-white-500, #FAFAFA);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+#logo {
+    width: 64px;
+    height: 74.148px;
 }
 
 .menuWrapper {
@@ -214,6 +236,8 @@ header {
 
 
 /* ---------- Main Content Starts Here ---------- */
+
+/* hero section */
 .heroSection {
     display: flex;
     height: 480px;
@@ -222,14 +246,92 @@ header {
     align-items: flex-start;
     gap: 24px;
     align-self: stretch;
-    background: linear-gradient(0deg, rgba(191, 150, 99, 0.40) 0%, rgba(191, 150, 99, 0.40) 100%), url(../img/homeHeroBanner.jpeg) lightgray 50% / cover no-repeat;
-    background-blend-mode: color, normal;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 15.51%, rgba(0, 0, 0, 0.30) 31.29%), linear-gradient(0deg, rgba(191, 150, 99, 0.40) 0%, rgba(191, 150, 99, 0.40) 100%), url(../img/homeHeroBanner.jpeg) lightgray 50% / cover no-repeat;
+    background-blend-mode: normal, color, normal;
 }
 
 .heroSection h1, p {
-    color: #FAFAFA;
+    color: #e4e4e4;
 }
 
+/* get involve section */
+.getInvolveSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.getInvolveSection p {
+    color: #e4e4e4;
+}
+
+.reserveTicket {
+    display: flex;
+    padding: 60px 8.33%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+    text-align: center;
+    background: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
+
+.ctaButtonBlue {
+    display: flex;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 80px;
+    background: var(--Foundation-White-white-500, #FAFAFA);
+    color: var(--Foundation-Blue-blue-600, #1661C5);
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
+.getInvolve {
+    display: flex;
+    padding: 60px 8.33%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+    text-align: center;
+    background: var(--Foundation-Green-green-500, #8EBF24);
+}
+
+.ctaButtonGreen {
+    display: flex;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 80px;
+    background: var(--Foundation-White-white-500, #FAFAFA);
+    color: var(--Foundation-Green-green-600, #81AE21);
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
+/* event highlight section */
 .eventInfoWrapper {
     display: flex;
     width: 40.83%;
@@ -260,10 +362,10 @@ header {
 .eventHighlightSection {
     display: flex;
     width: 100%;
-    padding: 40px 0px 56px 0px;
+    padding: 32px 0px;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 24px;
     align-self: stretch;
 }
 
@@ -519,6 +621,7 @@ p.eventDescription {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
+/* speakers and organizations section */
 .speakersAndOrganizations {
     display: flex;
     padding: 40px 0px 56px 0px;
@@ -597,12 +700,13 @@ p.eventDescription {
     flex-shrink: 0;
 }
 
+/* event location section */
 .eventLocationSection {
     display: flex;
     width: 100%;
     padding: 32px 8.33%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
     align-self: stretch;
 }
@@ -626,14 +730,13 @@ p.eventDescription {
 
 
 
-
 /* ---------- Footer Starts Here ---------- */
 footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: auto;
     width: 100%;
-    height: 200px;
+    height: 250px;
     padding: 32px 8.33%;
     justify-content: space-between;
     align-items: flex-start;
@@ -679,8 +782,8 @@ footer a:hover {
 .textWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
+    gap: 16px;
     align-self: stretch;
 }
 
