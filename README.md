@@ -54,4 +54,7 @@
 
 ## Acknowledgments
 
-Work in progress...
+- **Professor Joshua Oakley** for teaching and guiding us in HTML and CSS development.  
+- **Classmates in DES 228, Section 2, Fall 2024** for their helpful critiques.  
+- **Adobe Stock** for resources for fonts, colors, mockup templates, and images.  
+- **[Bay Area Nonprofits](https://www.bayareanonprofits.com/homeless)** for their resources about the different Nonprofit Organizations on homelessness in the Bay Area.
