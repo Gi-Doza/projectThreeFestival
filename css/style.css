@@ -19,44 +19,8 @@ body {
     align-items: center;
 }
 
-p {
-    color: var(--Foundation-White-white-500, #3B3B3B);
-
-    /* paragraph */
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 20px */
-    letter-spacing: 0.48px;
-}
-
-p.overline {
-    color: var(--Foundation-White-white-500, #3B3B3B);
-
-    /* overline */
-    font-family: "Nunito Sans";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 125%; /* 11.25px */
-    letter-spacing: 0.27px;
-}
-
-caption {
-    color: var(--Foundation-Black-black-500, #3B3B3B);
-
-    /* caption */
-    font-family: "Nunito Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 15px */
-    letter-spacing: 0.36px;
-}
-
 h1 {
-    color: var(--Foundation-Blue-blue-500, #186BD9);
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h1 - Title */
     font-family: "Bebas Neue";
@@ -69,7 +33,6 @@ h1 {
 
 h2 {
     color: var(--Foundation-Black-black-500, #0A0A0A);
-text-align: center;
 
     /* h2 - section */
     font-family: "Bebas Neue";
@@ -93,8 +56,7 @@ h3 {
 }
 
 h4 {
-    color: var(--Foundation-White-white-500, #FAFAFA);
-    text-align: center;
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h4 - heading */
     font-family: "Bebas Neue";
@@ -106,7 +68,7 @@ h4 {
 }
 
 h5 {
-    color: var(--Foundation-Blue-blue-500, #186BD9);
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h5 - subheading */
     font-family: "Bebas Neue";
@@ -126,6 +88,42 @@ h6 {
     font-style: normal;
     font-weight: 400;
     line-height: 125%; /* 26.25px */
+    letter-spacing: 0.42px;
+}
+
+p {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.54px;
+}
+
+caption {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* caption */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
+.overline {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* overline */
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 17.5px */
     letter-spacing: 0.42px;
 }
 
@@ -160,10 +158,6 @@ p.primaryButton {
   font-weight: 400;
   font-style: normal;
 } */
-
-
-
-
 
 /* ---------- Header Starts Here! ---------- */
 header {
@@ -232,9 +226,6 @@ header {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
-
-
-
 /* ---------- Main Content Starts Here ---------- */
 
 /* hero section */
@@ -266,6 +257,10 @@ header {
     color: #e4e4e4;
 }
 
+.getInvolveSection h4 {
+    color: var(--Foundation-White-white-500, #FAFAFA);
+}
+
 .reserveTicket {
     display: flex;
     padding: 60px 8.33%;
@@ -278,7 +273,6 @@ header {
     text-align: center;
     background: var(--Foundation-Blue-blue-500, #186BD9);
 }
-
 
 .ctaButtonBlue {
     display: flex;
@@ -477,7 +471,7 @@ p.eventDescription {
 
     /* caption */
     font-family: "Nunito Sans";
-    font-size: 12px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 400;
     line-height: 125%; /* 15px */
@@ -719,16 +713,16 @@ p.eventDescription {
     gap: 24px;
 }
 
+.address h5 {
+    color: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
 #googleMap {
     width: 40.5%;
     height: 295px;
     border: 4px solid var(--Foundation-Blue-blue-500, #186BD9);
     overflow: hidden;
 }
-
-
-
-
 
 /* ---------- Footer Starts Here ---------- */
 footer {

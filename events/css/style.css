@@ -19,44 +19,8 @@ body {
     align-items: center;
 }
 
-p {
-    color: var(--Foundation-White-white-500, #3B3B3B);
-
-    /* paragraph */
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 20px */
-    letter-spacing: 0.48px;
-}
-
-p.overline {
-    color: var(--Foundation-White-white-500, #3B3B3B);
-
-    /* overline */
-    font-family: "Nunito Sans";
-    font-size: 9px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 125%; /* 11.25px */
-    letter-spacing: 0.27px;
-}
-
-caption {
-    color: var(--Foundation-Black-black-500, #3B3B3B);
-
-    /* caption */
-    font-family: "Nunito Sans";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 15px */
-    letter-spacing: 0.36px;
-}
-
 h1 {
-    color: var(--Foundation-Blue-blue-500, #186BD9);
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h1 - Title */
     font-family: "Bebas Neue";
@@ -68,8 +32,7 @@ h1 {
 }
 
 h2 {
-    color: var(--Foundation-White-white-500, #FAFAFA);
-    text-align: right;
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h2 - section */
     font-family: "Bebas Neue";
@@ -81,8 +44,7 @@ h2 {
 }
 
 h3 {
-    color: var(--Foundation-White-white-500, #FAFAFA);
-    text-align: right;
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h3 - subtitle */
     font-family: "Bebas Neue";
@@ -94,7 +56,7 @@ h3 {
 }
 
 h4 {
-    color: var(--Foundation-Blue-blue-50, #E8F0FB);
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h4 - heading */
     font-family: "Bebas Neue";
@@ -106,7 +68,7 @@ h4 {
 }
 
 h5 {
-    color: var(--Foundation-Blue-blue-50, #E8F0FB);
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h5 - subheading */
     font-family: "Bebas Neue";
@@ -129,13 +91,49 @@ h6 {
     letter-spacing: 0.42px;
 }
 
+p {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.54px;
+}
+
+caption {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* caption */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
+.overline {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* overline */
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 17.5px */
+    letter-spacing: 0.42px;
+}
+
 p.primaryButton {
     color: var(--Foundation-White-white-500, #FAFAFA);
     text-align: center;
 
     /* paragraph */
     font-family: "Nunito Sans";
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 125%; /* 20px */
@@ -170,6 +168,11 @@ header {
     align-items: center;
     background: var(--Foundation-White-white-500, #FAFAFA);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+#logo {
+    width: 64px;
+    height: 74.148px;
 }
 
 .menuWrapper {
@@ -223,10 +226,15 @@ header {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
-
-
-
 /* ---------- Main Content Starts Here ---------- */
+h1 {
+    color: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
+h2 ,h3 ,h4 ,h5, h6 {
+    color: var(--Foundation-White-white-500, #FAFAFA);
+}
+
 .heroSection {
     display: flex;
     height: 480px;
@@ -324,17 +332,13 @@ header {
     align-self: stretch;
 }
 
-
-
-
-
 /* ---------- Footer Starts Here ---------- */
 footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: auto;
     width: 100%;
-    height: 200px;
+    height: 250px;
     padding: 32px 8.33%;
     justify-content: space-between;
     align-items: flex-start;
@@ -380,8 +384,8 @@ footer a:hover {
 .textWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
+    gap: 16px;
     align-self: stretch;
 }
 
@@ -407,6 +411,10 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.address p {
+    color: #0A0A0A;
 }
 
 /* ---------- Resposive Design Starts Here ---------- */

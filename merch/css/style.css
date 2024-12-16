@@ -19,44 +19,8 @@ body {
     align-items: center;
 }
 
-p {
-    color: var(--Foundation-White-white-500, #0A0A0A);
-
-    /* paragraph */
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 20px */
-    letter-spacing: 0.48px;
-}
-
-p.overline {
-    color: var(--Foundation-White-white-500, #0A0A0A);
-
-    /* overline */
-    font-family: "Nunito Sans";
-    font-size: 9px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 125%; /* 11.25px */
-    letter-spacing: 0.27px;
-}
-
-caption {
-    color: var(--Foundation-Black-black-500, #3B3B3B);
-
-    /* caption */
-    font-family: "Nunito Sans";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%; /* 15px */
-    letter-spacing: 0.36px;
-}
-
 h1 {
-    color: var(--Foundation-Blue-blue-500, #186BD9);
+    color: var(--Foundation-Black-black-500, #0A0A0A);
 
     /* h1 - Title */
     font-family: "Bebas Neue";
@@ -69,7 +33,6 @@ h1 {
 
 h2 {
     color: var(--Foundation-Black-black-500, #0A0A0A);
-    text-align: center;
 
     /* h2 - section */
     font-family: "Bebas Neue";
@@ -78,6 +41,18 @@ h2 {
     font-weight: 400;
     line-height: 125%; /* 76.25px */
     letter-spacing: 1.22px;
+}
+
+h3 {
+    color: var(--Foundation-Black-black-500, #0A0A0A);
+
+    /* h3 - subtitle */
+    font-family: "Bebas Neue";
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 58.75px */
+    letter-spacing: 0.94px;
 }
 
 h4 {
@@ -92,6 +67,18 @@ h4 {
     letter-spacing: 0.72px;
 }
 
+h5 {
+    color: var(--Foundation-Black-black-500, #0A0A0A);
+
+    /* h5 - subheading */
+    font-family: "Bebas Neue";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 33.75px */
+    letter-spacing: 0.54px;
+}
+
 h6 {
     color: var(--Foundation-Black-black-500, #0A0A0A);
 
@@ -104,13 +91,49 @@ h6 {
     letter-spacing: 0.42px;
 }
 
+p {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* paragraph */
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.54px;
+}
+
+caption {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* caption */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.48px;
+}
+
+.overline {
+    color: var(--Foundation-Black-black-400, #3B3B3B);
+
+    /* overline */
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 17.5px */
+    letter-spacing: 0.42px;
+}
+
 p.primaryButton {
     color: var(--Foundation-White-white-500, #FAFAFA);
     text-align: center;
 
     /* paragraph */
     font-family: "Nunito Sans";
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 125%; /* 20px */
@@ -145,6 +168,11 @@ header {
     align-items: center;
     background: var(--Foundation-White-white-500, #FAFAFA);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+#logo {
+    width: 64px;
+    height: 74.148px;
 }
 
 .menuWrapper {
@@ -199,6 +227,10 @@ header {
 }
 
 /* ---------- Main Content Starts Here ---------- */
+h1 {
+    color: var(--Foundation-Blue-blue-500, #186BD9);
+}
+
 .heroSection {
     display: flex;
     height: 273px;
@@ -311,19 +343,24 @@ header {
     font-weight: 700;
     line-height: 125%; /* 20px */
     letter-spacing: 0.48px;
+
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-
-
-
+.addToCartButton:hover {
+    background-color: var(--Foundation-Black-black-500, #0A0A0A);
+    color: var(--Foundation-White-white-500, #FAFAFA);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
 
 /* ---------- Footer Starts Here ---------- */
 footer {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-top: auto;
     width: 100%;
-    height: 200px;
+    min-height: 250px;
     padding: 32px 8.33%;
     justify-content: space-between;
     align-items: flex-start;
@@ -369,8 +406,8 @@ footer a:hover {
 .textWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
+    gap: 16px;
     align-self: stretch;
 }
 
@@ -398,7 +435,57 @@ footer a:hover {
     align-items: flex-start;
 }
 
+.address p {
+    color: #0A0A0A;
+}
+
 /* ---------- Resposive Design Starts Here ---------- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
+    #logo {
+        width: 40px;
+        margin-right: 20px;
+    }
     
+    .getTicketSection {
+        flex-direction: column;
+        gap: 24px;
+        padding: 20px;
+    }
+
+    .getTicketSection img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .getTicketInfoWrapper {
+        width: 100%; /* Wrapper also takes full width */
+    }
+
+    .merchSection {
+        width: 100%;
+        padding: 40px 20px 60px 20px;
+    }
+
+    .merchCardWrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .merchCard {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerEventInfoWrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .eventTextWrapper {
+        gap: 20px;
+    }
 }
