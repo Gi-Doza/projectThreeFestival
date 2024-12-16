@@ -48,7 +48,7 @@
      - **Nunito (Body Copy)**: Friendly, approachable, and easy to read — creates a welcoming and accessible experience for users.
 
 5. **Challenges and Solutions**  
-   Designing for responsiveness has been a significant challenge. I worked on making one page fully responsive, and adjusting each section to fit smaller screens was very complicated. The ultimate goal is to ensure all pages are responsive across various devices, from phones to tablets and desktops.
+   Designing for responsiveness has been a significant challenge. I worked on making one page fully responsive, and adjusting each section to fit smaller screens was very complicated. The ultimate goal is to ensure all pages are responsive across various devices, from phones to tablets and desktops. (Only the "Store" page is responsive to a smaller device at this moment.)
 
 ---
 
